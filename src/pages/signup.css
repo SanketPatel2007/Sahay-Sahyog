@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.auth-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #1d2671, #c33764);
+}
+
+.auth-card {
+  background: white;
+  width: 90%;
+  max-width: 380px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.auth-card h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+}
+
+.field label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+  pointer-events: none;
+  background: white;
+  padding: 0 5px;
+  transition: 0.3s;
+}
+
+.field input:focus + label,
+.field input:valid + label {
+  top: -8px;
+  font-size: 12px;
+  color: #c33764;
+}
+
+.toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #1d2671;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(120deg, #1d2671, #c33764);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-text {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.footer-text strong {
+  color: #1d2671;
+  cursor: pointer;
+}
